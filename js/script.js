@@ -46,6 +46,7 @@ const app = new Vue({
     cancellaAttivita(parametro) {
       const attivitaArchiviata = this.planningGiornata[parametro];
       this.attivitaArchiviate.push(attivitaArchiviata);
+      this.planningGiornata.splice(parametro, 1);
     },
   },
 });
