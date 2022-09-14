@@ -85,3 +85,7 @@ meter {
 .listaAttivita ul li i:hover{
     cursor: pointer;
 }
+
+button, input{
+    border: 2px solid green;
+}

@@ -41,12 +41,25 @@ const app = new Vue({
       },
     ],
     attivitaArchiviate: [],
+    nuovaAttivita: "",
   },
   methods: {
     cancellaAttivita(parametro) {
+      console.log(parametro);
       const attivitaArchiviata = this.planningGiornata[parametro];
       this.attivitaArchiviate.push(attivitaArchiviata);
       this.planningGiornata.splice(parametro, 1);
+    },
+    aggiungiAttivita() {
+      const attivitaDaAggiungere = this.nuovaAttivita;
+      this.nuovaAttivita = "";
+      if (attivitaDaAggiungere.length > 0) {
+        this.planningGiornata.push(attivitaDaAggiungere);
+        console.log(this.planningGiornata);
+        console.log(attivitaDaAggiungere);
+      } else {
+        console.log("Vuoto");
+      }
     },
   },
 });
