@@ -23,7 +23,7 @@
     <div id="app">
         <h1>To do list</h1>
         <div class="aggiungiAttivita">
-            <input type="text" v-model="nuovaAttivita">
+            <input type="text" v-model="nuovaAttivita" @keyUp.enter="aggiungiAttivita">
             <button @click="aggiungiAttivita">Aggiungi</button>
         </div>
         <div class="listaAttivita">
