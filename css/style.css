@@ -73,6 +73,15 @@ meter {
     -webkit-user-drag: element;
 }
 
+#app{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.5em;
+}
+
 .testoSbarrato{
     text-decoration: line-through;
+}
+
+.listaAttivita ul li i:hover{
+    cursor: pointer;
 }
