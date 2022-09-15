@@ -86,6 +86,10 @@ meter {
     cursor: pointer;
 }
 
+li{
+    margin: 10px 10px;
+}
+
 button, input{
     border: 2px solid green;
 }
